@@ -1,0 +1,8 @@
+# shellcheck 团队约定（提交前必须零告警）
+#
+# 用法：shellcheck -o all init.sh deploy.sh analyze.sh check.sh
+#
+# disable 规则只放"纯风格项"，不放可能掩盖真实缺陷的检查：
+#   SC2250  强制所有变量加花括号（纯风格，与可读性冲突）
+shell=bash
+disable=SC2250
